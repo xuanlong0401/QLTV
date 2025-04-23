@@ -26,7 +26,7 @@ if($result->Status==1)
 $_SESSION['login']=$_POST['emailid'];
 echo "<script type='text/javascript'> document.location ='dashboard.php'; </script>";
 } else {
-echo "<script>alert('Tài khoản của bạn không hoạt động. Vui lòng liên hệ với quản trị viên');</script>";
+echo "<script>alert('Tài khoản của bạn không hoạt động. Vui lòng liên hệ với quản trị viên !');</script>";
 
 }
 }
@@ -34,7 +34,7 @@ echo "<script>alert('Tài khoản của bạn không hoạt động. Vui lòng l
 } 
 
 else{
-echo "<script>alert('Thông tin đăng nhập không khớp. Vui lòng kiểm tra lại');</script>";
+echo "<script>alert('Thông tin đăng nhập không khớp. Vui lòng kiểm tra lại !');</script>";
 }
 }
 
