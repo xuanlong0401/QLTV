@@ -118,37 +118,32 @@ if(isset($_POST['signup']))
           <form name="signup" method="post" onSubmit="return valid();">
 
             <div class="form-group position-relative">
-              <label>Họ và tên *</label>
-              <i class="fa fa-user"></i>
+              <label>Họ và tên </label>
               <input type="text" name="fullanme" class="form-control" required>
             </div>
-
             <div class="form-group position-relative">
               <label>Số điện thoại</label>
-              <i class="fa fa-phone"></i>
               <input type="text" name="mobileno" maxlength="10" class="form-control" required>
             </div>
 
             <div class="form-group position-relative">
-              <label>Email *</label>
-              <i class="fa fa-envelope"></i>
+              <label>Email </label>
               <input type="email" name="email" id="emailid" class="form-control" onBlur="checkAvailability()" required>
               <span id="user-availability-status" style="font-size:12px;"></span>
             </div>
 
             <div class="form-group position-relative">
-              <label>Mật khẩu *</label>
-              <i class="fa fa-lock"></i>
+              <label>Mật khẩu </label>
               <input type="password" name="password" class="form-control" required>
             </div>
 
             <div class="form-group position-relative">
-              <label>Nhập lại mật khẩu *</label>
-              <i class="fa fa-lock"></i>
+              <label>Nhập lại mật khẩu </label>
               <input type="password" name="confirmpassword" class="form-control" required>
             </div>
 
             <button type="submit" name="signup" class="btn btn-custom btn-block">Đăng ký</button>
+            <a href="index.php" class="btn btn-secondary btn-block mt-2">Quay về trang đăng nhập</a>
           </form>
         </div>
       </div>
